@@ -6,14 +6,15 @@ describe('My Login application', () => {
 
         browser.takeScreenshot()
         browser.saveScreenshot('test.png');
+    });
 
-        /*$('#username').setValue(username);
-        $('#password').setValue(password);
-        $('button[type="submit"]').click();*/
+    it('should check layout', () => {
+        expect(1).toBe(1);
+    });
 
-/*        expect($('#flash')).toBeExisting();
-        expect($('#flash')).toHaveTextContaining(
-            'You logged into a secure area!');*/
+    it('should check layout again', () => {
+        browser.url(`https://www.google.com`);
+        expect(1).toBe(2);
     });
 });
 
